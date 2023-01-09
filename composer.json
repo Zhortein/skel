@@ -3,6 +3,14 @@
     "type": "project",
     "license": "MIT",
     "description": "A minimal MDS project",
+    "authors": [
+        {
+            "name": "David Renard",
+            "email": "david.renard@the-rens.com",
+            "homepage": "https://www.david-renard.fr",
+            "role": "Owner, Developer"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -42,6 +50,8 @@
         "symfony/yaml": "*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "fakerphp/faker": "^1.21",
         "symfony/debug-pack": "*",
         "symfony/profiler-pack": "*",
         "symfony/maker-bundle": "^1.0",

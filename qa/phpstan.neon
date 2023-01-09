@@ -1,0 +1,11 @@
+parameters:
+    checkGenericClassInNonGenericObjectType: false
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::children\(\)#'
+        - '#Call to an undefined method DateTimeInterface::add\(\)#'
+        - '#Call to an undefined method DateTimeInterface::modify\(\)#'
+        - '#Call to an undefined method DateTimeInterface::setDate\(\)#'
+        - '#Call to an undefined method DateTimeInterface::setTime\(\)#'
+        - '#Call to an undefined method DateTimeInterface::setTimezone\(\)#'
+        - '#Call to an undefined method DateTimeInterface::sub\(\)#'

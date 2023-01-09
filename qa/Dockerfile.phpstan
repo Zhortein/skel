@@ -1,0 +1,10 @@
+FROM jakzal/phpqa:php8.1
+
+RUN docker-php-ext-install calendar
+
+RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | bash \
+  && apt install symfony-cli
+
+RUN composer global bin phpstan require phpstan/phpstan-phpunit \
+  && composer global bin phpstan require phpstan/phpstan-symfony \
+  && composer global bin phpstan require phpstan/phpstan-doctrine
