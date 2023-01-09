@@ -4,6 +4,7 @@
     "license": "MIT",
     "description": "A minimal MDS project",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.1",
         "ext-ctype": "*",
