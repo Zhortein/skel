@@ -1,0 +1,94 @@
+{
+    "name": "zhortein/skel",
+    "type": "project",
+    "license": "MIT",
+    "description": "A minimal MDS project",
+    "require": {
+        "php": ">=8.1",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "symfony/flex": "^2"
+    },
+    "flex-require": {
+        "symfony/asset": "*",
+        "symfony/console": "*",
+        "symfony/debug-pack": "*",
+        "symfony/doctrine-messenger": "*",
+        "symfony/dotenv": "*",
+        "symfony/expression-language": "*",
+        "symfony/form": "*",
+        "symfony/framework-bundle": "*",
+        "symfony/http-client": "*",
+        "symfony/intl": "*",
+        "symfony/mailer": "*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/mime": "*",
+        "symfony/monolog-bundle": "^3.1",
+        "symfony/notifier": "*",
+        "symfony/orm-pack": "*",
+        "symfony/process": "*",
+        "symfony/profiler-pack": "*",
+        "symfony/security-bundle": "*",
+        "symfony/serializer-pack": "*",
+        "symfony/string": "*",
+        "symfony/test-pack": "*",
+        "symfony/translation": "*",
+        "symfony/twig-pack": "*",
+        "symfony/runtime": "*",
+        "symfony/validator": "*",
+        "symfony/web-link": "*"
+        "symfony/yaml": "*"
+    },
+    "require-dev": {
+        "symfony/debug-pack": "*",
+        "symfony/profiler-pack": "*",
+        "symfony/maker-bundle": "^1.0",
+        "symfony/test-pack": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php80": "*",
+        "symfony/polyfill-php81": "*"
+    },
+    "scripts": {
+        "auto-scripts": [
+        ],
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*",
+        "symfony/framework-bundle": "<5.0"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.2.*"
+        }
+    }
+}
