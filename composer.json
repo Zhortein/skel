@@ -37,7 +37,7 @@
         "symfony/twig-pack": "*",
         "symfony/runtime": "*",
         "symfony/validator": "*",
-        "symfony/web-link": "*"
+        "symfony/web-link": "*",
         "symfony/yaml": "*"
     },
     "require-dev": {
